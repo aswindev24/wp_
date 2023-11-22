@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+button:hover {
+  box-shadow:  0px 20px 20px  rgba(60,60,60,1);
+}
+div{
+box-shadow: 5px 5px 15px 15px  rgba(09,09,09,0.9);
+
+}
+</style>
+<script type="text/javascript">
+function validateform()
+{
+ var name     = document.form1.name.value;
+ var password = document.form1.password.value;
+ var email    = document.form1.email.value;
+
+   if (name == "")
+    {
+     alert("enter a name");
+    }
+    if(password.length<8)
+    {
+    alert("Password must be minimun of length 8");
+    }
+}
+
+</script>
+</head>
+<title>form</title>
+<body bgcolor="#C0C0C0"><br<br><center><h2> ADMISSION FORM</h2></center>
+<center><b>
+<div style=" background-color:#808080;width:500px" >
+<form name="form1" onsubmit="return validateform()" align ="center" ><br><br>
+<center><table cellpadding="4" style="">
+<tr>
+<td><lable> NAME:</td>
+<td></lable><input type="text" name="name"></td>
+</tr>
+<tr>
+<td><lable>AGE:</td></lable>
+<td><input type="number"></td>
+</tr>
+<tr>
+<td>DATE OF BIRTH:</td>
+<td><input type="date"></td>
+</tr>
+<tr>
+<td>ADDRESS:</td>
+<td><textarea></textarea></td>
+</tr>
+<tr>
+<td><lable>EMAIL</lable></td>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+
+<td><lable>GENDER</lable></td>
+<td><input type="radio" name="radio">M
+<input type="radio" name="radio">F</td>
+</tr>
+<tr>
+<td>QUALIFICATIONS</td>
+<td><select>
+<option>-------</option>
+<option>BCA</option>
+<option>MCA</option>
+<option>+2</option>
+</select></td>
+<tr>
+<td>LANGUAGES</td>
+<td><input type="checkbox" >Malayalam <input type="checkbox" >English<input type="checkbox" >Hindi</td>
+</tr>
+<tr>
+<td>PHOTO</td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td>USER NAME</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>PASSWORD</td>
+<td><input type="password" name="password"></td>
+</tr>
+
+
+
+<tr>
+<td align="right"><input type="checkbox"></td>
+<td>Mention above all are true to my knowldge .</td>
+</tr>
+
+<tr>
+<td align ="center"><button>SUBMIT</button></td>
+<td align ="center"><button>RESET</button></td>
+
+</tr> </b>
+
+</table>
+</center>
+</form>
+</div>
+</center>
+</body>
+</html>
