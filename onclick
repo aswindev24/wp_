@@ -1,0 +1,25 @@
+
+
+<html>
+<head>
+<style>
+.b
+{
+width:100px;
+height:100px;
+}
+</style>
+</head>
+<body>
+<button class="b" onClick="color()">CHANGE COLOUR</buton>
+<script>
+var c=["red","black","green"];
+var i=0;
+function color()
+{
+document.body.style.backgroundColor=c[i];
+i=(i+1)%c.length;
+}
+</script>
+</body>
+</html>
